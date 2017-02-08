@@ -64,7 +64,18 @@ h1{
     label{
         display: block;
         margin-bottom: 5px;
-    }    
+    }
+    p{
+        position: absolute;
+        left: 1px;
+        bottom: 1px;
+        margin: 0;
+        line-height: 33px;
+        padding: 0 11px;
+        font-size: 14px;
+        color: grey;
+        background: #FFF;
+    }
 }
 input:not([type=submit]){
     width: 320px;
@@ -74,6 +85,8 @@ input:not([type=submit]){
     padding: 0 10px;
     box-sizing: border-box;
     font-size: 14px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    outline: none;
 }
 input[type=submit],button,.btn{
     width: 100%;
@@ -87,6 +100,7 @@ input[type=submit],button,.btn{
     background: #db001b;
     cursor: pointer;
     outline: none;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
 }
 #autoFill{
     position: absolute;

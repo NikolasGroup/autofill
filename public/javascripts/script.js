@@ -14,13 +14,15 @@ $(document).ready(function(){
                 var html = $(this).text();
                 $(this).closest('.input-block').find('input').val(html);
                 $(this).parent().remove();
-            });
+                $('.hover').remove();
+            });            
         }			
     });
 });
 $(document).click(function(event) {
     if ($(event.target).closest("#autoFill").length || $(event.target).closest("input").length) return;
     $('ul#autoFill').remove();
+    $('.hover').remove();
     event.stopPropagation();
 });
 function createAuto(a,xml){
@@ -29,6 +31,7 @@ function createAuto(a,xml){
         value = $this.val();
     if(value!=''){
         $('ul#autoFill').remove();
+        $('.hover').remove();
         var html = '<ul id="autoFill">';
         $(xml).find(dataType).children().each(function(){
             var str = $(this).html();
@@ -43,5 +46,13 @@ function createAuto(a,xml){
     }
     else{
         $('ul#autoFill').remove();
+        $('.hover').remove();
     } 
+    $('#autoFill li').hover(function(){
+        $('.hover').remove();
+        var html = $(this).text();
+        $(this).closest('.input-block').append('<p class="hover">'+ html +'</p>');
+    },function(){
+        $('.hover').remove();
+    });
 }
