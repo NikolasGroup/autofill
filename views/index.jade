@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    div.work-area
+        header
+            div.header_top
+                a.logo
+                    img(src="/images/logo.png")
+            nav
+                a(href="#") Cars
+                a(href="#") Special
+                a(href="#") Spare parts
+                a(href="#") Reviews
+                a(href="#") Forums
+        h1 Registration Form
+        form(id="registration",method="POST",onsubmit="reg(this)")
+            div.input-block
+                label Name
+                input(name="user_name",type="text",data-type="user_name",autocomplete="off")
+            dev.input-block
+                label Email
+                input(nmae="ml",type="email",data-type="ml",autocomplete="off")
+            div.input-block
+                label Password
+                input(name="user_password",type="password",data-type="user_password",autocomplete="off")
+            div.input-block
+                label City
+                input(name="city",type="text",data-type="city",autocomplete="off")
+            div.input-block
+                label Street
+                input(name="steet",type="text",data-type="street",autocomplete="off")
+            div.input-block
+                label House
+                input(name="house",type="text",data-type="house",autocomplete="off")
+            input(type="submit",value="Send")
+    
+  

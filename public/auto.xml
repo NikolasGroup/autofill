@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <city>
+        <item>Томск</item>
+        <item>Новосибирск</item>
+        <item>Москва</item>
+        <item>Махачкала</item>
+        <item>Тверь</item>
+    </city>
+    <street>
+        <item>Ленина пр.</item>
+        <item>Сибирская</item>
+        <item>Кирова пр.</item>
+        <item>Киевская</item>
+        <item>Тверская</item>
+    </street>
+    <house>
+        <item>1</item>
+        <item>10</item>
+        <item>12</item>
+        <item>2</item>
+    </house>     
+</items>
